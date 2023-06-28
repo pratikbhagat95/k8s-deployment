@@ -1,11 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: petclinicsvc
 spec:
   selector:
-    app: myapp
+    app: petclinicapp
   ports:
   - port: 8080
     targetPort: 8080
-  type: NodePort
